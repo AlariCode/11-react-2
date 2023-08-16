@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import styles from './Layout.module.css';
 import Button from '../../components/Button/Button';
 import cn from 'classnames';
@@ -28,7 +28,7 @@ export function Layout() {
 				Выход
 			</Button>
 		</div>
-		<div>
+		<div className={styles['content']}>
 			<Outlet />
 		</div>
 	</div>;
