@@ -44,3 +44,5 @@ export function Menu() {
 		</div>
 	</>;
 }
+
+export default Menu;
