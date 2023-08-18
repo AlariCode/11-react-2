@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: '/',
-				element: <Menu />
+				element: <Suspense fallback={<>Загрузка...</>}><Menu /></Suspense>
 			},
 			{
 				path: '/cart',
