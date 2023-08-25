@@ -1,0 +1,84 @@
+.item {
+	display: flex;
+	gap: 20px;
+	max-width: 512px;
+	margin-bottom: 27px;
+}
+
+.image {
+	width: 82px;
+	height: 82px;
+	background-size: cover;
+	filter: drop-shadow(0px 8px 25px rgba(224, 219, 196, 0.90));
+	border-radius: 20px;
+}
+
+.actions {
+	margin-left: auto;
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	align-self: flex-start;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.name {
+	color: var(--text-color);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.price {
+	color: var(--primary-color);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.minus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: 1px solid var(--primary-color);
+	border-radius: 50%;
+	width: 29px;
+	height: 29px;
+}
+
+.plus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	border-radius: 50%;
+	width: 29px;
+	height: 29px;
+}
+
+.remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: none;
+	width: 29px;
+	height: 29px;
+}
+
+.number {
+	color: var(--text-color);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
